@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f8fc;
+  padding: 3rem;
+}
+
+.color-font {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #97144d;
+}
+.image-logos {
+  background: #97144d;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.form-container {
+  margin-top: 5%;
+}
+.info-section,
+.form-section {
+  padding: 2rem;
+}
+
+.info-section h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.info-section p {
+  color: white;
+  line-height: 1.6;
+}
+
+.info-section h3 {
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.info-section ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.info-section li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section .logo {
+  max-width: 150px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("path-to-your-arrow-icon.png");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 10px; /* Adjust the size to fit your icon */
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background-color: #0066cc;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .info-section,
+  .form-section {
+    width: 50%;
+  }
+
+  .form-section {
+    border-left: 1px solid #f0f0f0;
+  }
+}

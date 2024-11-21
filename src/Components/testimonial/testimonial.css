@@ -1,0 +1,23 @@
+.data-wrapper {
+  padding: 1rem 2.5rem;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s;
+
+  padding: 5%;
+  background: #fae4eb;
+}
+.content-text {
+  color: #97144d;
+  text-align: center;
+}
+.para-testimonial {
+  color: #6a6a6a;
+  margin-top: 2%;
+  font-size: 18px;
+  width: 79%;
+  font-weight: 500;
+  line-height: 30px;
+}

@@ -1,0 +1,36 @@
+.nav-container-1 {
+  width: 85vw;
+  margin: 0rem auto;
+}
+.nav-logo-container {
+  background: #97144d;
+  width: 18%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.color-text {
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .nav-logo-container {
+    width: 50%;
+    padding: 10px;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container-1 {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-logo-container {
+    width: 50%;
+    padding: 8px;
+    max-width: none;
+  }
+}

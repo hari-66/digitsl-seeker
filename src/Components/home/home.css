@@ -1,0 +1,174 @@
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card {
+  background-color: #fae4eb;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 17px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 140px;
+  animation: float 2s ease-in-out infinite;
+}
+@media (max-width: 1024px) {
+  .card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    margin-left: 20%;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .text-content {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #97144d;
+  margin-bottom: 5px;
+  margin-top: 10%;
+}
+
+.text-content {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6a6a6a;
+}
+
+.card-home-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 6%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card-home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .text-content {
+    font-size: 12px;
+  }
+}
+
+.home-container {
+  width: 85vw;
+
+  margin: 0rem auto;
+  margin-bottom: 12%;
+}
+
+.para-text-home {
+  color: #6a6a6a;
+  margin-top: 2%;
+  font-size: 20px;
+  width: 89%;
+  font-weight: 500;
+  line-height: 25px;
+}
+@media (max-width: 768px) {
+  .para-text-home {
+    font-size: 16px;
+    width: 95%;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .para-text-home {
+    font-size: 14px;
+    width: 100%;
+    line-height: 20px;
+  }
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+}
+@media (max-width: 480px) {
+  .button-container {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  .button-recr {
+    margin-top: 4%;
+  }
+}
+.button-recr {
+  margin-left: 4%;
+}
+@media (max-width: 1024px) {
+  .button-recr {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-recr {
+    margin-left: 0;
+  }
+}
